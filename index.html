@@ -5,19 +5,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Digital - Muhamad Syamsul Hadi</title>
+
+
+
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border: 3px solid red
+        }
+
         h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 300;
+        }
+
+        .about-section {
+            border: 1px solid orange
+        }
+
+        .header-paragraph {
+            margin-top: 10px;
+            font-size: 20px;
             color: red;
+            font-weight: 300;
+        }
+
+        .content-paragraph {
+            text-align: justify;
+            line-height: 1.7;
+            margin-top: 20px;
+            padding: 0 15px;
         }
     </style>
+
+
+
+
+
 </head>
+<!--Internal CSS-->
 
 <body>
     <header>
         <!--inline style-->
         <!--headint tag h1 -> h6-->
-        <h1 style="color: blue;">Muhamad <em>Syamsul</em> Hadi</h1>
-        <p>Frontend
+        <h1>Muhamad <em>Syamsul</em> Hadi</h1>
+        <p class="header-paragraph">Frontend
         <div>Engineer</div> at HSI</p>
     </header>
     <nav>
@@ -27,15 +72,13 @@
     <main>
 
 
-        <section>
+        <section class="about-section">
             <h2>Tentang Saya</h2>
             <!--images/profileku.webp-->
-            <img src="/images/profileku.webp" alt="Foto profil Muhamad Syamsul Hadi" width="200" style="border-radius: 100%;border:4px dashed #111;outline:2px dashed orange" />
+            <img src="/images/profileku.webp" alt="Foto profil Muhamad Syamsul Hadi" width="200" />
 
-            <img src="https://images.pexels.com/photos/11165322/pexels-photo-11165322.jpeg"
-                alt="Foto profil Muhamad Syamsul Hadi" width="200" />
 
-            <p>
+            <p class="content-paragraph">
 
                 Saya adalah seorang Frontend Engineer yang berpengalaman di HSI dengan
                 passion yang tinggi dalam mengembangkan antarmuka web yang modern dan
@@ -44,7 +87,7 @@
                 untuk mempelajari teknologi baru dan berkontribusi dalam menciptakan
                 pengalaman pengguna yang luar biasa.
             </p>
-            <p>
+            <p class="content-paragraph">
                 Selain coding, saya juga senang berbagi pengetahuan dengan tim dan
                 berkontribusi pada proyek open source. Saya percaya bahwa kolaborasi
                 yang baik dan kode yang bersih adalah kunci untuk menciptakan aplikasi
